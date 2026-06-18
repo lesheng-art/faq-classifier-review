@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+.DS_Store
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# 评估增量日志（中间产物，最终输出在 .json）
+eval/results/*.jsonl

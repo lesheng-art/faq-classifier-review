@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.3, pytest-9.1.0, pluggy-1.6.0 -- /opt/homebrew/opt/python@3.14/bin/python3.14
+cachedir: .pytest_cache
+rootdir: /Users/test/faq-classifier-review
+configfile: pyproject.toml
+collecting ... collected 13 items
+
+tests/test_classifier.py::TestParseAndNormalize::test_valid_json PASSED  [  7%]
+tests/test_classifier.py::TestParseAndNormalize::test_invalid_json_does_not_guess_label PASSED [ 15%]
+tests/test_classifier.py::TestParseAndNormalize::test_illegal_label PASSED [ 23%]
+tests/test_classifier.py::TestParseAndNormalize::test_empty_input PASSED [ 30%]
+tests/test_classifier.py::TestParseAndNormalize::test_non_object_json PASSED [ 38%]
+tests/test_classifier.py::TestParseAndNormalize::test_invalid_confidence_normalized PASSED [ 46%]
+tests/test_classifier.py::TestIsRetryable::test_value_error_not_retryable PASSED [ 53%]
+tests/test_classifier.py::TestIsRetryable::test_key_error_not_retryable PASSED [ 61%]
+tests/test_classifier.py::TestIsRetryable::test_timeout_retryable_by_name PASSED [ 69%]
+tests/test_classifier.py::TestBatchClassify::test_jsonl_incremental_write PASSED [ 76%]
+tests/test_classifier.py::TestBatchClassify::test_resume_skips_done PASSED [ 84%]
+tests/test_classifier.py::TestBatchClassify::test_truncated_jsonl_tolerated PASSED [ 92%]
+tests/test_classifier.py::TestNoDataLeak::test_few_shot_not_in_test_samples PASSED [100%]
+
+============================== 13 passed in 0.02s ==============================

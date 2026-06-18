@@ -1,0 +1,153 @@
+{
+  "total": 30,
+  "correct": 19,
+  "accuracy": 0.6333333333333333,
+  "errors": [
+    {
+      "id": 6,
+      "question": "退款什么时候能到账",
+      "true": "退款退货",
+      "pred": "物流查询",
+      "confidence": "high",
+      "reason": ""
+    },
+    {
+      "id": 10,
+      "question": "商品质量有问题，我要举报",
+      "true": "投诉建议",
+      "pred": "其他",
+      "confidence": "low",
+      "reason": ""
+    },
+    {
+      "id": 15,
+      "question": "建议你们增加夜间配送选项",
+      "true": "投诉建议",
+      "pred": "物流查询",
+      "confidence": "medium",
+      "reason": ""
+    },
+    {
+      "id": 21,
+      "question": "退款已经申请了但是快递还没寄回去，我可以先取消退货吗",
+      "true": "退款退货",
+      "pred": "物流查询",
+      "confidence": "medium",
+      "reason": ""
+    },
+    {
+      "id": 23,
+      "question": "你们这个退货流程也太麻烦了吧，我都搞不懂怎么操作",
+      "true": "投诉建议",
+      "pred": "退款退货",
+      "confidence": "high",
+      "reason": ""
+    },
+    {
+      "id": 24,
+      "question": "我想问下这个退款的事顺便看看快递到没到",
+      "true": "退款退货",
+      "pred": "物流查询",
+      "confidence": "medium",
+      "reason": ""
+    },
+    {
+      "id": 25,
+      "question": "东西寄错地址了，能帮我改一下",
+      "true": "物流查询",
+      "pred": "退款退货",
+      "confidence": "medium",
+      "reason": ""
+    },
+    {
+      "id": 27,
+      "question": "这个充电宝能带上飞机吗",
+      "true": "商品咨询",
+      "pred": "其他",
+      "confidence": "low",
+      "reason": ""
+    },
+    {
+      "id": 28,
+      "question": "嗯嗯好的谢谢",
+      "true": "其他",
+      "pred": "商品咨询",
+      "confidence": "low",
+      "reason": ""
+    },
+    {
+      "id": 29,
+      "question": "？？？",
+      "true": "其他",
+      "pred": "商品咨询",
+      "confidence": "low",
+      "reason": ""
+    },
+    {
+      "id": 30,
+      "question": "你好",
+      "true": "其他",
+      "pred": "商品咨询",
+      "confidence": "low",
+      "reason": ""
+    }
+  ],
+  "confusion": {
+    "退款退货": {
+      "退款退货": 4,
+      "物流查询": 3
+    },
+    "物流查询": {
+      "物流查询": 5,
+      "退款退货": 1
+    },
+    "账号问题": {
+      "账号问题": 4
+    },
+    "商品咨询": {
+      "商品咨询": 4,
+      "其他": 1
+    },
+    "投诉建议": {
+      "投诉建议": 2,
+      "其他": 1,
+      "物流查询": 1,
+      "退款退货": 1
+    },
+    "其他": {
+      "商品咨询": 3
+    }
+  },
+  "per_class": {
+    "退款退货": {
+      "total": 7,
+      "correct": 4,
+      "recall": 0.5714285714285714
+    },
+    "物流查询": {
+      "total": 6,
+      "correct": 5,
+      "recall": 0.8333333333333334
+    },
+    "账号问题": {
+      "total": 4,
+      "correct": 4,
+      "recall": 1.0
+    },
+    "商品咨询": {
+      "total": 5,
+      "correct": 4,
+      "recall": 0.8
+    },
+    "投诉建议": {
+      "total": 5,
+      "correct": 2,
+      "recall": 0.4
+    },
+    "其他": {
+      "total": 3,
+      "correct": 0,
+      "recall": 0.0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+[project]
+name = "faq-classifier-review"
+version = "0.2.1"
+description = "客服 FAQ 分类器 Code Review + 改进 demo"
+requires-python = ">=3.10"
+dependencies = ["openai>=1.30.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["improved", "eval"]
